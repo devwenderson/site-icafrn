@@ -4,6 +4,18 @@
   --active-bg-color: #ffb902;
   --white: #fff;
   --black: #000;
+  --h1-font: 6rem;
+  --h2-font: 3rem;
+  --p-font: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
 
 @font-face {
@@ -23,13 +35,6 @@
   font-weight: bold;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
 .poppins-regular {
   font-family: "Poppins", serif;
   font-weight: 400;
@@ -47,4 +52,6 @@
   font-weight: 700;
   font-style: normal;
 }
+
+
 

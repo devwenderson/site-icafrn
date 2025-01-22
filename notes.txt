@@ -1,0 +1,5 @@
+Padding dos elementos: 
+
+element {
+    padding: 60px 17%
+}

@@ -1,15 +1,26 @@
+section {
+    padding: 70px 17% 60px;
+}
+
 .section {
     height: 100vh;
-}
-
-.section--green {
-    background-color: var(--green-100);
-}
-
-.hero__text-content {
+    position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: flex-start;
+    background-image: linear-gradient(to left, rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(../assets/background.jpg);
+    background-size: cover;
+    background-position: bottom center;
 }
 
+.hero__title {
+    font-size: var(--h2-font);
+    font-weight: bold;
+    color: var(--white);
+}
+
+.hero__paragraph {
+    font-size: var(--p-font);
+    color: var(--white);
+    width: 50%;
+}
