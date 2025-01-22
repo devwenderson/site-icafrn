@@ -1,5 +1,5 @@
 .active {
-    background-color: #1d4ed8;
+    background-color: var(--active-bg-color);
 }
 
 .brand {
@@ -13,20 +13,19 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0f172a;
+    background-color: var(--green-700);
     padding: 1em;
     position: sticky;
     top: 0;
 }
 
-.ul {
+.nav__link-list {
     list-style: none;
     display: flex;  
     margin-bottom: 0;
-
 }
 
-.ul li a {
+.nav__link-list li a {
     display: block;
     text-decoration: none;
     color: rgb(240, 245, 255);
@@ -34,13 +33,14 @@ nav {
     margin: 0 0.5rem;
     text-decoration: none;
     border-radius: 10px;
+    font-weight: 500;
 }
 
-.ul li a:hover {
+.nav__link-list li a:hover {
     scale: 1.1;
 }
 
-nav .menu {
+nav .nav__menu {
     position: absolute;
     top: 0.75rem;
     right: 0.5rem;
@@ -52,11 +52,11 @@ nav .menu {
     cursor: pointer;
 }
 
-nav .menu:hover {
+nav .nav__menu:hover {
     scale: 1.1;
 }
 
-nav .menu span {
+nav .nav__menu span {
     height: 0.4rem;
     width: 100%;
     background-color: #fff;
@@ -64,7 +64,7 @@ nav .menu span {
 }
 
 @media (max-width: 610px) {
-    nav .menu {
+    nav .nav__menu {
         display: flex;
     }
 
@@ -73,22 +73,22 @@ nav .menu span {
         align-items: start;
     }
 
-    nav .ul {
+    nav .nav__link-list {
         display: none;
         flex-direction: column;
         width: 100%;
         margin-bottom: 0.25rem;
     }
 
-    nav .ul.open {
+    nav .nav__link-list.open {
         display: flex;
     }
 
-    nav .ul li {
+    nav .nav__link-list li {
         width: 100%;
         text-align: center;
     }
-    nav .ul li a{
+    nav .nav__link-list li a{
         margin: 0.25rem 0.5rem;
     }
 }

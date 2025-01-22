@@ -10,12 +10,12 @@ const Navbar = () => {
     return (
         <nav>
             <Link to={'/'} className="brand"> ICAF-RN </Link>
-            <div className='menu' onClick={() => setMenuOpen(!menuOpen)}>
+            <div className='nav__menu' onClick={() => setMenuOpen(!menuOpen)}>
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <ul className={menuOpen ? 'ul open' : 'ul'}>
+            <ul className={menuOpen ? 'nav__link-list open' : 'nav__link-list'}>
                 <li>
                     <NavLink to={'/'}>Início</NavLink>
                 </li>
@@ -24,7 +24,7 @@ const Navbar = () => {
                 </li>
             </ul>
             <div>
-                <a href="#"><FaInstagram size={30}/></a>
+                <a href="#"><FaInstagram size={30} color="#ffb902"/></a>
             </div>
         </nav>
     )

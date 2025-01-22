@@ -1,0 +1,15 @@
+.section {
+    height: 100vh;
+}
+
+.section--green {
+    background-color: var(--green-100);
+}
+
+.hero__text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
