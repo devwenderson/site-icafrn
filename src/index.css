@@ -1,12 +1,15 @@
+@import url(./fonts.css);
+
 :root {
   --green-100: #6d9773;
   --green-700: #0c3a2d;
   --active-bg-color: #ffb902;
   --white: #fff;
   --black: #000;
-  --h1-font: 6rem;
+  --h1-font: 5rem;
   --h2-font: 3rem;
-  --p-font: 1rem;
+  --p-font: 13px;
+  --transition-normal: all 0.2 ease;
 }
 
 * {
@@ -18,40 +21,21 @@
   text-decoration: none;
 }
 
-@font-face {
-  font-family: Poppins;
-  src: url(./fonts/Poppins-Regular.ttf);
-  font-weight: normal;
+::-webkit-scrollbar {
+  width: 15px;
 }
 
-@font-face {
-  font-family: Poppins;
-  src: url(./fonts/Poppins-Medium.ttf);
-  font-weight: 500;
-}
-@font-face {
-  font-family: Poppins;
-  src: url(./fonts/Poppins-Bold.ttf);
-  font-weight: bold;
+::-webkit-scrollbar-track {
+  width: 100%;
 }
 
-.poppins-regular {
-  font-family: "Poppins", serif;
-  font-weight: 400;
-  font-style: normal;
+::-webkit-scrollbar-thumb {
+  background-color: var(--green-700);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
 }
 
-.poppins-medium {
-  font-family: "Poppins", serif;
-  font-weight: 500;
-  font-style: normal;
+/* GENERAL */
+section {
+  padding: 70px 17% 60px;
+  height: 100vh;
 }
-
-.poppins-bold {
-  font-family: "Poppins", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-
-
