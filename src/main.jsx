@@ -10,19 +10,19 @@ import News from './pages/News.jsx'
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/site-icafrn",
     element: <App />,
     children: [
       {
-        path: "/",
+        path: "/site-icafrn",
         element: <Home />,
       },
       {
-        path: "/sobre-nos/",
+        path: "/site-icafrn/sobre-nos/",
         element: <About />,
       },
       {
-        path: "/noticias/",
+        path: "/site-icafrn/noticias/",
         element: <News />,
       },
     ],
