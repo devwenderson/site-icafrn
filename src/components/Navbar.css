@@ -50,6 +50,10 @@ header {
     color: var(--active-bg-color);
 }
 
+.nav__navigation li a.active:hover {
+    color: var(--green-700);
+}
+
 .nav-right-icon {
     transition: var(--transition-normal);
 }
@@ -62,7 +66,7 @@ header {
     display: none;
 }
 
-@media screen and (max-width: 728px) {
+@media screen and (max-width: 790px) {
     .nav__navigation {
         display: none;
     }
@@ -80,10 +84,14 @@ header {
     }
 
     .nav__navigation li a {
-        font-size: 22px;
+        font-size: 15px;
     }
 
     .nav__toggle {
         display: block;
+        cursor: pointer;
+    }
+    .nav__toggle:hover {
+        scale: 1.1;
     }
 }
